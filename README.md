@@ -1,7 +1,7 @@
 # AngularFirestore2
 ![image](firestore-crud.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
-
+*tutorial : https://www.youtube.com/watch?v=r6LjP3nzF4w&t=4014s
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
