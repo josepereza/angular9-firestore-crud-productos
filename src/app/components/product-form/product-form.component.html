@@ -1,0 +1,32 @@
+<mat-card [style.background-color]="'yellow'">
+    <mat-card-header>
+        <mat-card-title>LISTADO</mat-card-title>
+        <mat-card-subtitle>Entrada de productos</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="addProduct()">
+        <label>
+            Name:
+            <input type="text"  name="name" [(ngModel)]="product.name">
+          </label>
+        <br>
+          <label>
+            Description:
+            <input type="text" name="description" [(ngModel)]="product.description">
+          </label>
+        <br>
+          <label>
+            price:
+            <input type="number" name="price" [(ngModel)]="product.price">
+          </label>
+          <br>
+          <mat-card-actions >
+            <button mat-raised-button  color="primary" *ngIf="enviar"  type="submit">SEND</button>
+            <button mat-raised-button color ="accent" *ngIf="!enviar" (click)="actualizar()">UPDATE</button>
+            
+        </mat-card-actions>
+    </form>
+    </mat-card-content>
+   
+   
+</mat-card>
