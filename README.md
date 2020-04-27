@@ -2,6 +2,33 @@
 ![image](firestore-crud.png)
 * tutorial : https://www.youtube.com/watch?v=r6LjP3nzF4w&t=4014s
 * tutorial : https://www.youtube.com/watch?v=AyuIaJTqBLs&t=488s
+
+### OTRA FORMA DE HACERLO CON CSSGRID - FLEXBOX:
+* products.components.css
+```
+.contenedor {
+   display:grid;
+   grid-template-columns: 40% 60% ;
+   grid-column-gap: 10px;
+ justify-content: center;
+}
+.listado {
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+}
+mat-card{
+    width: 200px;
+    height: 200px;
+}
+.formulario{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+```
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
 ## Development server
